@@ -1,0 +1,8 @@
+{
+	"items" : [
+		{"name":"Myriel","age":10},
+	    {"name":"Napoleon","age":32},
+	    {"name":"Mlle.Baptistine","age":24},
+	    {"name":"Mme.Magloire","age":45}
+    ]
+}

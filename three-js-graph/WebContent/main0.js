@@ -55,6 +55,17 @@ renderer.render(scene, camera);
 
 document.addEventListener('mousemove', onMouseMove, false);
 
+window.addEventListener('resize', onWindowResize, false);
+
+function onWindowResize() {
+    
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    
+    renderer.setSize( window.innerWidth, window.innerHeight );
+    
+}
+
 function onMouseMove(event) {
 	var mouseX = event.clientX - window.innerWidth/2;
 	var mouseY = event.clientY - window.innerHeight/2;
